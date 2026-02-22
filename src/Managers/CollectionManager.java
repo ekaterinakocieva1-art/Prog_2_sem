@@ -4,10 +4,10 @@ import Models.Coordinates;
 import Models.Location;
 import Models.Route;
 
-import java.util.ArrayList;
+import java.util.HashSet;
 
 public class CollectionManager {
-    public ArrayList<Route> list = new ArrayList<>();
+    public HashSet<Route> list = new HashSet<>();
     public CollectionManager(){
         Coordinates coords1 = new Coordinates(10.5f, 200L);
         Location from1 = new Location(0, 0.0, 0.0);
@@ -31,3 +31,4 @@ public class CollectionManager {
         return null;
     }
 }
+
