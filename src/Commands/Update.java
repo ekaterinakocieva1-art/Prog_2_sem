@@ -19,10 +19,7 @@ public class Update implements Command{
 
     @Override
     public void execute(String ... args){
-        if (args.length == 0){
-            System.out.println("Ошибка: ID не передан!");
-            return;
-        }
+        
         // превращаем id в число
         int id = Integer.parseInt(args[0]);
         Route r = manager.findId(id);
@@ -67,3 +64,4 @@ public class Update implements Command{
         return "update";
     }
 }
+
